@@ -1,0 +1,346 @@
+body  {
+  background: $grayLight;
+}
+
+html  {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+}
+
+.content {
+  width: 1200px;
+  margin: auto;
+}
+
+.main  {
+  height: auto;
+  width: 100%;
+}
+
+.fixed {
+  position:fixed;
+}
+
+section  {
+  height: auto;
+  clear: left;
+}
+
+#work_container, #resume_container, #blog_container, #contact_container  {
+  padding: 120px 0 0;
+}
+
+.hidden-sm	{
+	display: block !important;
+}
+
+.hidden-med	{
+	display: block !important;
+}
+
+.hidden-lg	{
+	display: none !important;
+}
+
+// BOX
+
+.box  {
+  @include transition(all, 0.2s, linear);
+  opacity: .75;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 2px solid lighten($gray, 10%);
+  width: 22%;
+  float: left;
+  margin-right: 4%;
+  margin-bottom: 30px;
+  background: $white;
+  &:hover {
+    opacity: 1.0;
+    border: 2px solid $gray;
+  }
+  &:nth-child(4n+2) {
+    margin-right: 0;
+  }
+  img  {
+    @include transition(all, 0.2s, linear);
+    width: 100%;
+    height: 100%;
+  }
+  h4  {
+    font-size: 1.0em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 5px;
+    a  {
+      color: $gray;
+      font-size: 1.25em;
+      margin: 0;
+      &:hover {
+        color: darken($gray, 15%);
+      }
+    }
+  }
+  p  {
+    color: $gray;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: .75em;
+  }
+  aside  {
+    box-sizing: border-box;
+    height: 140px;
+    width: 100%;
+    vertical-align: middle;
+  } 
+}
+
+// Media Queries
+
+@media (max-width: 1210px) {
+
+ul.nav li a  {
+  padding: 0px 34px;
+}
+
+
+ul.nav li a:nth-child(3)  {
+  padding: 0px 40px;
+}
+
+.content  {
+  width: 90%;
+  margin: auto;
+}
+
+}
+
+@media (min-width:821px) {
+    
+    ul.nav { 
+    	display:block !important; 
+      width: 100%;
+    }
+    
+    #sidr	{
+	    display: none !important;
+    }
+    
+    body	{
+      left: 0 !important;
+      min-width: 100% !important;
+	}
+}
+
+@media (max-width: 820px) {
+
+.hidden-sm	{
+	display: block !important;
+}
+
+.hidden-med	{
+	display: none !important;
+}
+
+.hidden-lg	{
+	display: block !important;
+}
+
+body  {
+  min-width: 100%;
+}
+
+#work_container, #resume_container, #blog_container, #contact_container  {
+  padding: 60px 0 0 0;
+}
+
+.intro  {
+  width: 100%;
+  margin-top: 0;
+  height: auto;
+  padding: 25px 0;
+  a span.icon-logo	{
+  	font-size: 180px;
+  	&:hover	{
+  		@include transition(all, 0.2s, linear);
+  		color: $blue;
+  	}
+  }
+  h1 a  {
+  	margin-top: 10px;
+  }
+}
+
+nav  {
+  width: 100%;
+  position: absolute;
+  height: auto;
+  margin-top: 40px;
+  ul  {
+	text-align: left;
+	padding: 0;
+	height: auto;
+	display: none;
+  }
+}
+
+#menu	{
+	display: block;
+	height: 40px;
+	background-color: $grayDark;
+	font-size: 28px;
+	width: 100%;
+	z-index: 10020;
+	span.icon-menu	{
+		@include transition(background, 0.2s, linear);
+		display: inline-block;
+		color: white;
+		line-height: 40px;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		&:hover	{
+			background: lighten($grayDark, 15%);
+		}
+	}
+}
+
+#resume h3 span.pull-right  {
+  float: none;
+  display: block;
+}
+
+.box  {
+  width: 47.5%;
+  margin-right: 5%;
+  opacity: 1.0;
+  &:nth-child(2n+2)  {
+    margin-right: 0;
+  }
+}
+
+#top-bar #search-form  {
+  display: none;
+}
+
+#search-form	{
+	float: none;
+	top: 0;
+	position: absolute;
+}
+
+#s	{
+	width: 80%;
+  &:focus {
+    width: 80%;
+  }
+}  
+
+#searchSubmit {
+  width: 20%;
+}
+
+#post	{
+  padding-top: 40px;
+}
+
+.error  {
+  padding-top: 70px;
+}
+
+.single, #results  {
+  padding-top: 50px;
+}
+
+}
+
+@media (max-width: 570px) {
+
+.hidden-sm	{
+	display: none !important;
+}
+
+.hidden-med	{
+	display: none !important;
+}
+
+.hidden-lg	{
+	display: block !important;
+}
+
+.error  {
+  width: 100%;
+}
+
+.main  {
+  min-width: 100%;
+}
+
+.intro	{
+	a span.icon-logo	{
+		font-size: 120px;
+	}
+	h1 a  {
+		font-size: 36px;
+	}
+}
+
+.box  {
+  min-width: 100%;
+  margin: 10px 0px;
+  aside {
+    height: auto !important;
+  }
+}
+
+#contact .contact {
+  width: 100%;
+}
+
+.single  {
+  p a img  {
+    width: 90%;
+  }
+}
+
+.error  {
+  h1  {
+    font-size: 120px;
+  }
+  h2  {
+    font-size: 28px;
+  }
+  .meter  {
+    width: 90%;
+  }
+}
+
+#results  {
+  h1  {
+    font-size: 22px;
+  }
+  a.thumbnail  {
+    display: block;
+    text-align: center;
+    img  {
+      float: none;
+      width: 80%;
+    }
+  }
+}
+
+footer  {
+  hr  {
+    width: 100%;
+  }
+  ul  {
+    li  {
+      padding: 10px;
+    }
+  }
+}
+
+}

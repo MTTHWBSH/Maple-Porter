@@ -1,0 +1,16 @@
+// colors
+$white: #ffffff;
+$grayLight: #ecf0f1;
+$gray: #95a5a6;
+$grayDark: #2c2c2c;
+$blueLight: #3498db;
+$blue: #2e8dcc;
+$blueDark: #2c3e50;
+
+// typography
+@font-face {font-family: 'EuropaGroSHOP-XLig';src: url('assets/fonts/2963C4_0_0.eot');src: url('assets/fonts/2963C4_0_0.eot?#iefix') format('embedded-opentype'),url('assets/fonts/2963C4_0_0.woff') format('woff'),url('assets/fonts/2963C4_0_0.ttf') format('truetype'),url('assets/fonts/2963C4_0_0.svg#wf') format('svg');}  
+@font-face {font-family: 'EuropaGroSHOP-Reg';src: url('assets/fonts/2963C4_1_0.eot');src: url('assets/fonts/2963C4_1_0.eot?#iefix') format('embedded-opentype'),url('assets/fonts/2963C4_1_0.woff') format('woff'),url('assets/fonts/2963C4_1_0.ttf') format('truetype'),url('assets/fonts/2963C4_1_0.svg#wf') format('svg');}
+@font-face {font-family: 'EuropaGroSHOP-Lig';src: url('assets/fonts/2963C4_2_0.eot');src: url('assets/fonts/2963C4_2_0.eot?#iefix') format('embedded-opentype'),url('assets/fonts/2963C4_2_0.woff') format('woff'),url('assets/fonts/2963C4_2_0.ttf') format('truetype'),url('assets/fonts/2963C4_2_0.svg#wf') format('svg');}
+$europaXlight: 'EuropaGroSHOP-XLig', 'Helvetica Neue', Helvetica, sans-serif;
+$europaLight: 'EuropaGroSHOP-Lig', 'Helvetica Neue', Helvetica, sans-serif;
+$europaReg: 'EuropaGroSHOP-Reg', 'Helvetica Neue', Helvetica, sans-serif;

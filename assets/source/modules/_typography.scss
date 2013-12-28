@@ -1,0 +1,142 @@
+// Icons
+
+@font-face {
+	font-family: 'portfolio';
+	src:url('assets/fonts/portfolio.eot');
+	src:url('assets/fonts/portfolio.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/portfolio.ttf') format('truetype'),
+		url('assets/fonts/portfolio.woff') format('woff'),
+		url('assets/fonts/portfolio.svg#portfolio') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'portfolio';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo:before {
+	content: "\e614";
+}
+.icon-twitter:before {
+	content: "\e600";
+}
+.icon-linkedin:before {
+	content: "\e601";
+}
+.icon-github:before {
+	content: "\e602";
+}
+.icon-user:before {
+	content: "\e603";
+}
+.icon-bubble:before {
+	content: "\e604";
+}
+.icon-dribbble:before {
+	content: "\e605";
+}
+.icon-loop:before {
+	content: "\e606";
+}
+.icon-star:before {
+	content: "\e607";
+}
+.icon-mail:before {
+	content: "\e608";
+}
+.icon-search:before {
+	content: "\e609";
+}
+.icon-file:before {
+	content: "\e60a";
+}
+.icon-top:before {
+	content: "\e60b";
+}
+.icon-menu:before {
+	content: "\e60c";
+}
+
+// Type
+
+*	{
+	color: $grayDark;
+	&::selection	{
+		background: lighten($blueLight, 25%);
+	}
+	&::-moz-selection	{
+		background: lighten($blueLight, 25%);
+	}
+}
+
+body	{
+	font-family: $europaLight;
+	color: $grayDark;
+}
+
+section h1 {
+  font-family: $europaXlight;
+  font-size: 32px;
+  color: $gray;
+  letter-spacing: 4px;
+  text-align: center;
+  clear: both;
+}
+
+p    {
+	line-height: 22px;
+	font-weight: 300;
+	margin: 30px 0;
+}
+
+a	{
+	@include transition(all, 0.2s, linear);
+	color: $blue;
+	text-decoration: none;
+	&:hover	{
+		color: lighten($blue, 15%);
+	}
+}
+
+.btn	{
+	@include transition(all, 0.1s, linear);
+	font-family: $europaReg;
+	color: $white;
+  	letter-spacing: 2px;
+	padding: 12px 0 8px 0;
+	background-color: $blue;
+	border-radius: 4px;
+	border-bottom: 5px solid darken($blue, 15%);
+	display: block;
+	margin: 30px auto;
+	min-width: 200px;
+	max-width: 200px;
+	text-align: center;
+	font-size: 16px;
+	text-transform: uppercase;
+	clear: both;
+	&:hover	{
+    color: $white;
+		background-color: darken($blue, 5%);
+		border-bottom: 3px solid darken($blue, 20%);
+		padding-bottom: 10px;
+	}
+	&:active	{
+		-webkit-transform: translateY(2px);
+		-moz-transform: translateY(2px);
+		-ms-transform: translateY(2px);
+		-o-transform: translateY(2px); 
+		transform: translateY(2px);
+	}
+}

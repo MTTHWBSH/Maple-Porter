@@ -1,0 +1,47 @@
+// Contact
+
+.contact  {
+  width: 450px;
+  margin: 30px auto 0 auto;
+  form  {
+    text-align: center;
+  }
+  input {
+    &#name,&#email,&#inquiry  {
+      font-size: 18px;
+      font-family: $europaLight;
+      margin-bottom: 25px;
+      padding: 12px 48px;
+      border: 2px solid lighten($gray, 10%);
+      border-radius: 3px;
+      box-sizing: border-box;
+      background-color: darken($white, 2.5%);
+      background-repeat: no-repeat;
+      background-position: 12px;
+      background-size: 26px;
+      width: 100%;
+      &:focus {
+        background-color: $white;
+        background-size: 26px;
+        outline: none;
+        border: 2px solid $gray;
+      }
+    }
+    &#name  {
+      background-image: url(assets/img/user.svg);
+    }
+    &#email  {
+      background-image: url(assets/img/mail.svg);
+    }
+    &#inquiry  {
+      background-image: url(assets/img/comment.svg);
+    }
+    &.btn  {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      outline: none;
+      width: 200px;
+    }
+  }
+}

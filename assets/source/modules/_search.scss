@@ -1,0 +1,121 @@
+// Search Form
+
+#search-form {
+  float: right;
+}
+
+#search-results-search-form > #search-form {
+  float: left; 
+  margin: 10px 0px 0px 30%;
+}
+
+#no-results h1, #no-results p { 
+  text-align: center; 
+}
+
+#searchpage .main {
+  position:relative; 
+  top: 11px;
+}
+
+#four-oh-four-search-form > #search-form {
+  float: left; 
+  margin-left: 39%;
+}
+
+#s  { 
+  @include transition(all, 0.3s, ease-in-out);
+  width: 160px; 
+  height: 40px; 
+  padding: 0px 30px 0px 10px; 
+  float: left;
+  font-size: 14px; 
+  border: 3px solid lighten($blue, 20%); 
+  color: $gray; 
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+#s:focus{ 
+  outline: none; 
+  background-color: $white; 
+  width: 220px;
+}
+
+#searchSubmit {
+  @include transition(all, 0.2s, ease-in-out);
+  background: lighten($blue, 20%);
+  background-image: url(assets/img/search.svg);
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid lighten($blue, 20%);
+  border-radius: 0;
+  color: transparent;
+  cursor: pointer;
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  &:hover {
+    background-size: 18px;
+  }
+}
+
+// Search Results
+
+#results  {
+  letter-spacing: 1px;
+  padding: 120px 25px 25px;
+  max-width: 940px;
+  margin: auto;
+  h1  {
+    margin-bottom: 20px;
+  }
+  h2  {
+    font-family: $europaLight;
+    font-size: 24px;
+    margin: 0;
+    a    {
+      color: $grayDark;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+  h3  {
+    font-family: $europaXlight;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+  h4  {
+    font-family: $europaXlight;
+    font-size: 20px;
+    line-height: 22px;
+    color: $gray;
+  }
+  p    {
+    font-family: $europaLight;
+    margin: 10px 0 0;
+    word-wrap: break-word;
+  }
+  article {
+    clear: left;
+  }
+  img   {
+    @include transition(all, 0.2s, linear);
+    width: 150px;
+    border: 3px solid $gray;
+    height: auto;
+    float: left;
+    margin: 10px 10px 10px 0px;
+    &:hover {
+      border: 3px solid $blue;
+    }
+  }
+}

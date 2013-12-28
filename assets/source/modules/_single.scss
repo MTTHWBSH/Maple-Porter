@@ -1,0 +1,52 @@
+// Single
+
+.single  {
+  margin: auto;
+  max-width: 940px;
+  padding: 100px 0px 50px 0px;
+  letter-spacing: 1px;
+  hr  {
+    margin: 5px 0px;
+  }
+  p  {
+    font-family: $europaLight;
+    font-size: 16px;
+    line-height: 22px;
+    a  {
+      img {
+        @include transition(all, 0.2s, linear);
+        width: 400px;
+        height: auto;
+        border: 3px solid lighten($gray, 15%);
+        border-radius: 5px;
+        margin: 10px 0px;
+        opacity: .8;
+        &:hover {
+          border: 3px solid $gray;
+        }
+      }  
+    }
+    em  {
+      display: inline;
+      color: $gray;
+      font-family: $europaXlight;
+      font-size: 18px;
+      margin-bottom: -30px;
+    }
+  }
+  h2  {
+    font-family: $europaLight;
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  h4 p  {
+    font-family: $europaXlight;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 0;
+    color: $gray;
+  }
+  iframe  {
+    width: 100%;
+  }
+}

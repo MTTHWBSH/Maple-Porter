@@ -1,0 +1,44 @@
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+  -moz-box-shadow:$top $left $blur $color #{$inset};
+  box-shadow:$top $left $blur $color #{$inset};
+}
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+hr	{
+	@include box-shadow(0, 1px, 0px, $white);
+	clear: both;
+	display: block;
+	margin-bottom: 20px;
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+    &:before,&:after	{
+      content: " "; 
+      display: table;   	
+    }
+    &:after {
+      clear: both;
+    }
+}

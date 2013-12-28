@@ -1,0 +1,49 @@
+// Resume
+
+#resume  {
+  letter-spacing: 1px;
+  h1 {
+    letter-spacing: 4px;
+    span  {
+      padding: 0px 5px;
+    } 
+  }
+  h2  {
+    color: $gray;
+    font-family: $europaReg;
+    font-size: 28px;
+    margin: 0px 0px 10px 0px;
+    letter-spacing: 2px;
+  }
+  h3  {
+    font-family: $europaReg;
+    font-size: 18px;
+    margin: 0;
+    line-height: 24px;
+    span  {
+      font-family: $europaXlight;
+      &.pull-right  {
+        float: right;
+        font-size: 12px;
+      }
+    }
+  }
+  ul  {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size:  14px;
+    list-style-type: none;
+    li  {
+      font-family: $europaLight;
+      line-height: 20px;
+      &:before { 
+        content: "+ "; 
+        color: $gray;
+      }
+      &.star:before  {
+        content: "★ ";
+        font-size: 10px;
+      }
+    }
+  }
+}

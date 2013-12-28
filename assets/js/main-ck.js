@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){e("nav").sticky({topSpacing:0});e("#menu").sticky({topSpacing:0});e("#menu").sidr()});
