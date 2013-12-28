@@ -1,10 +1,7 @@
 Maple-Porter
 ============
 
-_  _ ____ ___  _    ____    ___  ____ ____ ___ ____ ____ 
-|\/| |__| |__] |    |___    |__] |  | |__/  |  |___ |__/ 
-|  | |  | |    |___ |___    |    |__| |  \  |  |___ |  \
-
+<img src="http://mtthwbsh.com/favicon.ico" />
 
 // Responsive WP Portfolio Build
 
