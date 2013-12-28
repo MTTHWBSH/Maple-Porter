@@ -1,7 +1,7 @@
 Maple-Porter
 ============
 
-<img src="http://mtthwbsh.com/favicon.ico" style="height:50px;width:50px;margin:auto;"/>
+<img src="http://mtthwbsh.com/logo.png"/>
 
 + Responsive WP Portfolio Build
 
