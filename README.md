@@ -5,4 +5,8 @@ Maple-Porter
 
 + Responsive WP Portfolio Build
 
-+ Codekit congif included, if using CLI tools compile base.scss to style.css
++ base.scss > style.css
+
++ plugins.js > plugins-ck.js
+
++ main.js > main-ck.js
