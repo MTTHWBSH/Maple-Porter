@@ -3,7 +3,7 @@ Maple-Porter
 
 <img src="http://mtthwbsh.com/logo.png"/>
 
-+ Responsive WP Portfolio Build
+### Responsive WP Portfolio Build
 
 + base.scss > style.css
 
