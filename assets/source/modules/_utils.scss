@@ -42,3 +42,16 @@ hr	{
       clear: both;
     }
 }
+
+.loader {
+  background-image: url(assets/img/load.gif);
+  background-repeat: no-repeat;
+  background-size: 64px;
+  background-position: center;
+  width: 64px;
+  height: 128px;
+  text-align: center;
+  margin: auto;
+  display: block;
+  clear: both;
+}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 Theme Name: Maple Porter
 Theme URI: http://mtthwbsh.com
@@ -7,7 +6,7 @@ Version: 1.0
 Author: Matthew Bush
 Author URI: http://mtthwbsh.com
 */
-/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
@@ -128,6 +127,8 @@ hr { -webkit-box-shadow: 0 1px 0px white ; -moz-box-shadow: 0 1px 0px white ; bo
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 
+.loader { background-image: url(assets/img/load.gif); background-repeat: no-repeat; background-size: 64px; background-position: center; width: 64px; height: 128px; text-align: center; margin: auto; display: block; clear: both; }
+
 @font-face { font-family: 'portfolio'; src: url("assets/fonts/portfolio.eot"); src: url("assets/fonts/portfolio.eot?#iefix") format("embedded-opentype"), url("assets/fonts/portfolio.ttf") format("truetype"), url("assets/fonts/portfolio.woff") format("woff"), url("assets/fonts/portfolio.svg#portfolio") format("svg"); font-weight: normal; font-style: normal; }
 
 [class^="icon-"], [class*=" icon-"] { font-family: 'portfolio'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -173,9 +174,11 @@ p { line-height: 22px; font-weight: 300; margin: 30px 0; }
 a { -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; color: #2e8dcc; text-decoration: none; }
 a:hover { color: #69afdd; }
 
-.btn { -webkit-transition: all 0.1s linear; -moz-transition: all 0.1s linear; -ms-transition: all 0.1s linear; -o-transition: all 0.1s linear; transition: all 0.1s linear; font-family: "EuropaGroSHOP-Reg", "Helvetica Neue", Helvetica, sans-serif; color: white; letter-spacing: 2px; padding: 12px 0 8px 0; background-color: #2e8dcc; border-radius: 4px; border-bottom: 5px solid #20628e; display: block; margin: 30px auto; min-width: 200px; max-width: 200px; text-align: center; font-size: 16px; text-transform: uppercase; clear: both; }
-.btn:hover { color: white; background-color: #297fb7; border-bottom: 3px solid #1b5379; padding-bottom: 10px; }
-.btn:active { -webkit-transform: translateY(2px); -moz-transform: translateY(2px); -ms-transform: translateY(2px); -o-transform: translateY(2px); transform: translateY(2px); }
+.btn, .navigation a { -webkit-transition: all 0.1s linear; -moz-transition: all 0.1s linear; -ms-transition: all 0.1s linear; -o-transition: all 0.1s linear; transition: all 0.1s linear; font-family: "EuropaGroSHOP-Reg", "Helvetica Neue", Helvetica, sans-serif; color: white; letter-spacing: 2px; padding: 12px 0 8px 0; background-color: #2e8dcc; border-radius: 4px; border-bottom: 5px solid #20628e; display: block; margin: 30px auto; min-width: 200px; max-width: 200px; text-align: center; font-size: 16px; text-transform: uppercase; clear: both; }
+.btn:hover, .navigation a:hover { color: white; background-color: #297fb7; border-bottom: 3px solid #1b5379; padding-bottom: 10px; cursor: pointer; }
+.btn:active, .navigation a:active { -webkit-transform: translateY(2px); -moz-transform: translateY(2px); -ms-transform: translateY(2px); -o-transform: translateY(2px); transform: translateY(2px); }
+.btn.disabled, .navigation a.disabled { opacity: .7; }
+.btn.disabled:hover, .navigation a.disabled:hover { background-color: #2e8dcc; cursor: default; border-bottom: 5px solid #20628e; padding-bottom: 8px; }
 
 #top-bar { background-color: #2e8dcc; height: 40px; }
 #top-bar ul { margin: 0; padding: 0 5px; line-height: 40px; float: left; }
@@ -267,7 +270,7 @@ nav ul li a span:hover { -webkit-transition: all 0.4s linear; -moz-transition: a
 .contact input#name:focus, .contact input#email:focus, .contact input#inquiry:focus { background-color: white; background-size: 26px; outline: none; border: 2px solid #95a5a6; }
 .contact input#name { background-image: url(assets/img/user.svg); }
 .contact input#email { background-image: url(assets/img/mail.svg); }
-.contact input#inquiry { background-image: url(assets/img/comment.svg); }
+.contact input#inquiry { background-image: url(assets/img/comment.svg); margin-bottom: 0; }
 .contact input.btn { border-top: none; border-left: none; border-right: none; outline: none; width: 200px; }
 
 footer { padding: 50px; background: #dde4e6; margin-top: 75px; text-align: center; }
@@ -323,9 +326,8 @@ section { height: auto; clear: left; }
 
 .hidden-lg { display: none !important; }
 
-.box { -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; opacity: .75; box-sizing: border-box; padding: 5px; border: 2px solid #b1bdbd; width: 22%; float: left; margin-right: 4%; margin-bottom: 30px; background: white; }
+.box { -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; opacity: .75; box-sizing: border-box; padding: 5px; border: 2px solid #b1bdbd; width: 22%; float: left; margin: 0 1.5% 30px 1.5%; background: white; }
 .box:hover { opacity: 1.0; border: 2px solid #95a5a6; }
-.box:nth-child(4n+2) { margin-right: 0; }
 .box img { -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; width: 100%; height: 100%; }
 .box h4 { font-size: 1.0em; margin: 0; text-align: center; padding: 10px 5px; }
 .box h4 a { color: #95a5a6; font-size: 1.25em; margin: 0; }
@@ -354,8 +356,7 @@ section { height: auto; clear: left; }
   #menu span.icon-menu { -webkit-transition: background 0.2s linear; -moz-transition: background 0.2s linear; -ms-transition: background 0.2s linear; -o-transition: background 0.2s linear; transition: background 0.2s linear; display: inline-block; color: white; line-height: 40px; height: 40px; width: 40px; text-align: center; }
   #menu span.icon-menu:hover { background: #525252; }
   #resume h3 span.pull-right { float: none; display: block; }
-  .box { width: 47.5%; margin-right: 5%; opacity: 1.0; }
-  .box:nth-child(2n+2) { margin-right: 0; }
+  .box { width: 46%; margin: 0 2% 30px 2%; opacity: 1.0; }
   #top-bar #search-form { display: none; }
   #search-form { float: none; top: 0; position: absolute; }
   #s { width: 80%; }
@@ -371,7 +372,7 @@ section { height: auto; clear: left; }
   .main { min-width: 100%; }
   .intro a span.icon-logo { font-size: 120px; }
   .intro h1 a { font-size: 36px; }
-  .box { min-width: 100%; margin: 10px 0px; }
+  .box { min-width: 100%; margin: 0 0 20px 0; }
   .box aside { height: auto !important; }
   #contact .contact { width: 100%; }
   .single p a img { width: 90%; }

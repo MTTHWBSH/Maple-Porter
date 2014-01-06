@@ -1,5 +1,5 @@
 <footer>
-	<p>© 2013 Matthew Bush - all rights reserved</p>
+	<p>© 2014 Matthew Bush - all rights reserved</p>
 	<hr>
 	<ul>
       <li><a href="http://www.twitter.com/MTTHWBSH" target="_blank"><span aria-hidden="true" class="icon-twitter"></a></li>

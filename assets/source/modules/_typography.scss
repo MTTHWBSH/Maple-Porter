@@ -109,7 +109,7 @@ a	{
 	}
 }
 
-.btn	{
+.btn, .navigation a	{
 	@include transition(all, 0.1s, linear);
 	font-family: $europaReg;
 	color: $white;
@@ -131,6 +131,7 @@ a	{
 		background-color: darken($blue, 5%);
 		border-bottom: 3px solid darken($blue, 20%);
 		padding-bottom: 10px;
+		cursor: pointer;
 	}
 	&:active	{
 		-webkit-transform: translateY(2px);
@@ -138,5 +139,14 @@ a	{
 		-ms-transform: translateY(2px);
 		-o-transform: translateY(2px); 
 		transform: translateY(2px);
+	}
+	&.disabled  {
+		opacity: .7;
+		&:hover  {
+			background-color: $blue;
+			cursor: default;
+			border-bottom: 5px solid darken($blue, 15%);
+			padding-bottom: 8px;
+		}	
 	}
 }

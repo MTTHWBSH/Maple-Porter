@@ -50,7 +50,7 @@
 	   		 
 	   		 <div class="intro">
           <a href="http://mtthwbsh.com"><span class="icon-logo hidden-lg"></span></a>
-	   		 	<h1><a href="http://mtthwbsh.com">MATTHEW<span>BUSH</span></a></h1>
+	   		 	<h1><a href="<?php echo home_url(); ?>">MATTHEW<span>BUSH</span></a></h1>
         		<hr class="hidden-med hidden-sm"/>
         		<h3 class="hidden-sm hidden-med">I'm an <span>interface designer</span> and <span>developer</span>. Currently practicing both as a <span>product designer</span> at <span><a href="https://www.trunkclub.com" target="_blank">Trunk Club</a></span>.</h3>
     		</header><!-- HEADER -->
@@ -71,7 +71,7 @@
       		<ul class="nav">
         		<li><a href="http://mtthwbsh.com/#work">work</a></li>
         		<li><a href="http://mtthwbsh.com/#resume">resume</a></li>
-        		<li class="home"><a href="http://mtthwbsh.com" class="home"><span class="icon-logo"></span></a></li>
+        		<li class="home"><a href="<?php echo home_url(); ?>" class="home"><span class="icon-logo"></span></a></li>
         		<li><a href="http://mtthwbsh.com/#blog">blog</a></li>
        		 	<li><a href="http://mtthwbsh.com/#contact">contact</a></li>
       		</ul>
